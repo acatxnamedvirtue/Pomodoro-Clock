@@ -1,0 +1,34 @@
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="pomodoro.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header text-center">Pomodoro Clock</div>
+
+    <div class="buttons">
+      <div class="row1 clearfix">
+        <div class="break-length">BREAK LENGTH</div><div class="session-length">SESSION LENGTH</div>
+      </div>
+      <div class="row2 clearfix">
+        <span class="symbol" id="break-minus">-</span><p class="break-time">5</p><span class="symbol" id="break-plus">+</span><span class="symbol" id="session-minus">-</span><p class="session-time">25</p><span class="symbol" id="session-plus">+</span>
+      </div>
+    </div>
+
+    <div class="clock">
+      <div class="clock-text">Session</div>
+      <div class="clock-time">25:00</div>
+      <div class="clock-background"></div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $('.symbol').on("click", handleClick);
+      $('.clock').on("click", toggleClockTicking);
+    });
+  </script>
+</body>

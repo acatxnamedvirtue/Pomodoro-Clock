@@ -1,0 +1,101 @@
+body {
+  background: #333333 !important;
+  color: #ffffff !important;
+  font-family: Open Sans, sans-serif !important;
+  font-weight: 300 !important;
+}
+
+clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.header {
+  font-size: 70px;
+}
+
+.buttons, .clock {
+  margin: 60px auto 0 auto;
+  width: 255px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.break-length, .session-length {
+  float: left;
+  font-size: 12.8px;
+}
+
+.break-length {
+  margin-right: 62px;
+}
+
+.symbol, .break-time, .session-time {
+  float: left;
+}
+
+.symbol {
+  font-size: 25.6px;
+  cursor: pointer;
+}
+
+.symbol:first-child {
+  margin: 7px 16px 0 6px;
+}
+
+.symbol:nth-child(3) {
+  margin: 7px 0 0 19.25px;
+}
+
+.symbol:nth-child(4) {
+  margin: 7px 16px 0 72px;
+}
+
+.symbol:nth-child(6) {
+  margin: 7px 0 0 19.5px;
+}
+
+.break-time, .session-time {
+  font-size: 32px;
+  margin-top: -1px;
+}
+
+.clock {
+  position: relative;
+  width: 304px;
+  height: 304px;
+  border-radius: 50%;
+  border: 2px solid #99CC00;
+  margin: 9px auto;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.clock-text {
+  positon: relative;
+  text-align: center;
+  margin: 54px auto 0 auto;
+  font-size: 51.2px;
+  z-index: 1;
+}
+
+.clock-time {
+  position: relative;
+  text-align: center;
+  margin-top: 51px;
+  font-size: 64px;
+  z-index: 1;
+}
+
+.clock-background {
+  position: relative;
+  top: 32px;
+  z-index: -1;
+  background: #99CC00;
+  width: 300px;
+  height: 300px;
+}
